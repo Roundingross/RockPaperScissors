@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Lab #1A</string>
+    <string name="welcomeBannerTitle">Welcome to Rock-Paper-Scissors!\nPlease choose your weapon:</string>
+    <string name="rockLabel">Rock</string>
+    <string name="paperLabel">Paper</string>
+    <string name="scissorLabel">Scissor</string>
+    <string name="score_display">Score\nPlayer: %d | Computer: %d</string>
+    <string name="rock_image">Rock Image</string>
+    <string name="scissor_image">Scissor Image</string>
+    <string name="paper_image">Paper Image</string>
+    <string name="paper">Paper</string>
+    <string name="rock">Rock</string>
+    <string name="scissors">Scissors</string>
+    <string name="initial_score_display">Score\nPlayer: 0 | Computer: 0</string>
+</resources>

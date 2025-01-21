@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Video Background -->
+    <VideoView
+        android:id="@+id/videoBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true" />
+
+    <!-- Main Layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|top"
+        android:orientation="vertical"
+        android:layout_marginTop="32dp">
+
+        <!-- Welcome Banner -->
+        <TextView
+            android:id="@+id/appWelcomeBanner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|top"
+            android:text="@string/welcomeBannerTitle"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:textSize="24sp" />
+
+        <!-- Vertical Layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- Horizontal Button/Label Layout -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:orientation="horizontal">
+
+                <!-- Rock Label -->
+                <TextView
+                    android:id="@+id/rockLabel"
+                    android:layout_width="55dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/rock"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+                <!-- Paper Label -->
+                <TextView
+                    android:id="@+id/paperLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/paper"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+                <!-- Scissors Label -->
+                <TextView
+                    android:id="@+id/scissorsLabel"
+                    android:layout_width="48dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/scissors"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <!-- Horizontal ImageButton Layout -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="152dp"
+                android:orientation="horizontal">
+
+                <!-- Rock Image Button -->
+                <ImageButton
+                    android:id="@+id/rockImageButton"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/rock_image"
+                    android:onClick="onClickRock"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/rock_image"
+                    tools:ignore="UsingOnClickInXml" />
+
+                <!-- Paper Image Button -->
+                <ImageButton
+                    android:id="@+id/paperImageButton"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/paper_image"
+                    android:onClick="onClickPaper"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/paper_image"
+                    tools:ignore="UsingOnClickInXml,ImageContrastCheck" />
+
+                <!-- Scissors Image Button -->
+                <ImageButton
+                    android:id="@+id/scissorImageButton"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/scissor_image"
+                    android:onClick="onClickScissor"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/scissors_image"
+                    tools:ignore="DuplicateSpeakableTextCheck,UsingOnClickInXml" />
+            </LinearLayout>
+
+            <!-- Score Count -->
+            <TextView
+                android:id="@+id/scoreCountTextView"
+                android:layout_width="match_parent"
+                android:layout_height="93dp"
+                android:gravity="center|top"
+                android:text="@string/initial_score_display"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:paddingTop="16dp"/>
+
+            <!-- Game Message -->
+            <TextView
+                android:id="@+id/playGameTextView"
+                android:layout_width="match_parent"
+                android:layout_height="136dp"
+                android:gravity="center|top"
+                android:paddingTop="20dp"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
