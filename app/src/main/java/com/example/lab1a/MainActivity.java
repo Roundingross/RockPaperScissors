@@ -67,10 +67,10 @@ public class MainActivity extends AppCompatActivity {
             return "It's a tie!";
         } else if ((playerOrdinal + 1) % 3 == computerOrdinal) {
             computerScore++;
-            return "You lose!";
+            return computer + " beats " + player + ", you lose!";
         } else {
             playerScore++;
-            return "You win!";
+            return player + " beats " + computer + ", you win!";
         }
     }
 }

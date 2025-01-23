@@ -33,7 +33,7 @@
             android:gravity="center|top"
             android:text="@string/welcomeBannerTitle"
             android:textStyle="bold"
-            android:textColor="@android:color/black"
+            android:textColor="@android:color/white"
             android:textSize="24sp" />
 
         <!-- Vertical Layout -->
@@ -57,7 +57,7 @@
                     android:gravity="center"
                     android:text="@string/rock"
                     android:textStyle="bold"
-                    android:textColor="@android:color/black"
+                    android:textColor="@android:color/white"
                     android:textSize="20sp" />
 
                 <!-- Paper Label -->
@@ -69,7 +69,7 @@
                     android:gravity="center"
                     android:text="@string/paper"
                     android:textStyle="bold"
-                    android:textColor="@android:color/black"
+                    android:textColor="@android:color/white"
                     android:textSize="20sp" />
 
                 <!-- Scissors Label -->
@@ -81,7 +81,7 @@
                     android:gravity="center"
                     android:text="@string/scissors"
                     android:textStyle="bold"
-                    android:textColor="@android:color/black"
+                    android:textColor="@android:color/white"
                     android:textSize="20sp" />
             </LinearLayout>
 
@@ -125,7 +125,7 @@
                     android:onClick="onClickScissor"
                     android:scaleType="fitCenter"
                     android:src="@drawable/scissors_image"
-                    tools:ignore="DuplicateSpeakableTextCheck,UsingOnClickInXml" />
+                    tools:ignore="UsingOnClickInXml" />
             </LinearLayout>
 
             <!-- Score Count -->
@@ -135,7 +135,7 @@
                 android:layout_height="93dp"
                 android:gravity="center|top"
                 android:text="@string/initial_score_display"
-                android:textColor="@android:color/black"
+                android:textColor="@android:color/white"
                 android:textStyle="bold"
                 android:textSize="20sp"
                 android:paddingTop="16dp"/>
@@ -147,7 +147,7 @@
                 android:layout_height="136dp"
                 android:gravity="center|top"
                 android:paddingTop="20dp"
-                android:textColor="@android:color/black"
+                android:textColor="@android:color/white"
                 android:textSize="18sp"
                 android:textStyle="bold" />
         </LinearLayout>
